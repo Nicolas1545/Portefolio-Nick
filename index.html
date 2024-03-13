@@ -4,88 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+    <style>
+        .profile-image {
+            width: 200px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #ccc;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Meu Portfólio</h1>
     </header>
 
-<img src="https://uploads.metropoles.com/wp-content/uploads/2023/01/02114557/cr7-champions-emprestimo.jpg" width="200px" alt="CR7">
+    <main>
+        <img src="https://uploads.metropoles.com/wp-content/uploads/2023/01/02114557/cr7-champions-emprestimo.jpg" class="profile-image" alt="Foto de Cristiano Ronaldo">
 
-    <section>
-        <h2>Sobre Mim</h2>
-        <p>Olá, meu nome é Nicolas. Atualmente sou estudante de Ciências da Computação, apaixonado por tecnologia e programação. Estou em constante aprendizado e sempre buscando aprimorar minhas habilidades na área. Embora ainda não tenha experiência profissional, estou determinado a me tornar um profissional qualificado e contribuir de forma significativa para o mundo da tecnologia.</p>
-    </section>
-    
+        <article>
+            <h2>Sobre Mim</h2>
+            <p>Olá, meu nome é Nicolas. Atualmente sou estudante de Ciências da Computação, apaixonado por tecnologia e programação. Estou em constante aprendizado e sempre buscando aprimorar minhas habilidades na área. Embora ainda não tenha experiência profissional, estou determinado a me tornar um profissional qualificado e contribuir de forma significativa para o mundo da tecnologia.</p>
+        </article>
 
-    <section>
-        <h2>Habilidades</h2>
-        <ul>
-            <li>
-                <h3>Especialista Python</h3>
-                <p>Imerso em linguagem Python, buscando cada vez mais conhecimento na area. Elaborando projeto independente na area.</p>
-            </li>
-            <li>
-                <h3>Especialista HTML</h3>
-                <p>Estudando atualmente na Graduacao, a linguagem de marcacao HTML. Desenvolvendo projeto na area junto com o Orientador da Disciplina.</p>
-            </li>
-            <li>
-                <h3>Ingles Avancado</h3>
-                <p>Atualmente buscando proeficiencia na lingua inglesa.</p>
-            </li>
-        </ul>
-    </section>
+        <article>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>
+                    <h3>Especialista Python</h3>
+                    <p>Imerso em linguagem Python, buscando cada vez mais conhecimento na área. Elaborando projeto independente na área.</p>
+                </li>
+                <li>
+                    <h3>Especialista HTML</h3>
+                    <p>Estudando atualmente na graduação, a linguagem de marcação HTML. Desenvolvendo projeto na área junto com o orientador da disciplina.</p>
+                </li>
+                <li>
+                    <h3>Inglês Avançado</h3>
+                    <p>Atualmente buscando proficiência na língua inglesa.</p>
+                </li>
+            </ul>
+        </article>
 
-    <form action="#">
-        <label for="email">Email</label> <br>
-        <input type="text" name="email"> <br>
-        <label for="mensagem">Mensagem</label> <br>
-        <textarea name="mensagem" cols="30" rows="10"></textarea><br>
-        <label for="date">Data de Nascimento</label><br>
-        <input type="date" name="date"><br>
-        <label for="color">Cor preferida</label><br>
-        <input type="color" name="color">
-        <label for="file">Envie sua foto</label><br>
-        <input type="file" name="file"><br>
-        <input type="submit">
-    </form>
+        <form action="#">
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" required> <br>
+            <label for="mensagem">Mensagem</label> <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea><br>
+            <label for="date">Data de Nascimento</label><br>
+            <input type="date" name="date" required><br>
+            <label for="color">Cor preferida</label><br>
+            <input type="color" name="color" required>
+            <label for="file">Envie sua foto</label><br>
+            <input type="file" name="file" required><br>
+            <button type="submit">Enviar</button>
+        </form>
 
-    <p></p>
-    <table border="1">
-        <thead>
-          <tr>
-          <th>Universidade</th>
-          <th>Função</th>
-          <th>Rendimento</th>
-          <th></th>
-
-          </tr>
-
-        </thead>
-          <tbody>
-            <tr>
-              <td>UVV</td>
-              <td>Estudante</td>
-              <td>Excelente</td>
-              <td rowspan="4" ><img src="https://uvv.br/wp-content/uploads/Nova_Marca_Azul_Horizontal.png" width="50px" alt="UVV"></td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr> 
-              <td colspan="3" > Melhor Universidade Particular do Brasil</td>
-            </tr>
-          </tfoot>
-
-
-
-      </table>
-
-    <footer>
-        <p>&copy; 2024 Meu Portfólio</p>
-    </footer>
-
-<a href="https://br.linkedin.com/in/nicolas-alves-freitas-749140216?original_referer=https%3A%2F%2Fwww.linkedin.com%2F"> <img src="https://iconape.com/wp-content/files/yd/367773/svg/logo-linkedin-logo-icon-png-svg.png" width="50px" alt="Linkedin"></a>
-
-    <img src="https://branditechture.agency/brand-logos/wp-content/uploads/2022/06/JetBrains-PyCharm-1024x706.png" width="100px" alt="PyCharm">
-</body>
-</html>
+        <table>
+            <thead>
+                <tr>
+                    <th>Universidade</th>
+                    <th>Função</th>
+                    <th>Rendimento</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UVV</td>
+                    <td>Estudante</td>
+                    <td>Excelente</td>
+                    <td rowspan="4" ><img src="https://uvv.br/wp-content/uploads/Nova_Marca_Azul_Horizontal.png" width="50px" alt="UVV"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+              <tr> 
+                <td colspan="3" > Melhor Universidade Particular do Brasil</td>
+              </tr>
+            </tfoot>
+  
+  
+  
+        </table>
+  
+      <footer>
+          <p>&copy; 2024 Meu Portfólio</p>
+      </footer>
+  
+  <a href="https://br.linkedin.com/in/nicolas-alves-freitas-749140216?original_referer=https%3A%2F%2Fwww.linkedin.com%2F"> <img src="https://iconape.com/wp-content/files/yd/367773/svg/logo-linkedin-logo-icon-png-svg.png" width="50px" alt="Linkedin"></a>
+  
+      <img src="https://seeklogo.com/images/P/pycharm-edu-logo-73119B2E09-seeklogo.com.png" width="50px" alt="PyCharm">
+  </body>
+  </html>
